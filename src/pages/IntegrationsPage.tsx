@@ -3,11 +3,10 @@ import { motion } from 'framer-motion';
 import { Navbar } from '../components/landing/Navbar';
 import { Footer } from '../components/landing/Footer';
 import { 
-  Puzzle, ArrowRight, MessageSquare, Hash, Users, 
+  Puzzle, MessageSquare, Hash, Users, 
   Bell, Search, Pin, Shield, Send, Smile, 
-  UserPlus, Eye, Lock, FileText
+  UserPlus, Lock
 } from 'lucide-react';
-import { Link } from 'react-router-dom';
 
 const features = [
   {
@@ -96,7 +95,7 @@ const container = {
 
 const item = {
   hidden: { opacity: 0, y: 14 },
-  show: { opacity: 1, y: 0, transition: { duration: 0.45, ease: 'easeOut' } },
+  show: { opacity: 1, y: 0, transition: { duration: 0.45, ease: 'easeOut' as const } },
 };
 
 export const IntegrationsPage: React.FC = () => {

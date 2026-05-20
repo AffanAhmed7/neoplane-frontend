@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Send, Mail, User, MessageCircle, ArrowRight, CheckCircle2, AlertCircle } from 'lucide-react';
+import { Mail, User, ArrowRight, CheckCircle2, AlertCircle } from 'lucide-react';
 import { Button } from '../ui/Button';
 
 export const Contact: React.FC = () => {

@@ -1,14 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { Button } from '../ui/Button';
 import { Hexagon } from 'lucide-react';
-import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { AuthModal } from './AuthModal';
 import { useAppStore } from '../../store/useAppStore';
 
 export const Navbar: React.FC = () => {
   const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
-  const navigate = useNavigate();
   const { authModalOpen, authModalMode, setAuthModal } = useAppStore();
 
   useEffect(() => {
@@ -20,7 +19,7 @@ export const Navbar: React.FC = () => {
   }, []);
 
   const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, target: string) => {
-    const [path, hash] = target.split('#');
+    const [, hash] = target.split('#');
     
     // If we're on the landing page and clicking a hash link
     if (location.pathname === '/' && hash) {
@@ -53,7 +52,7 @@ export const Navbar: React.FC = () => {
           {/* Row 1 for Mobile: Logo (Left) and Auth (Right) */}
           <div className="flex items-center justify-between w-full md:w-auto gap-4">
             <Link to="/" className="flex items-center gap-2 group z-10 relative shrink-0">
-              <Hexagon className="text-brand group-hover:text-primary transition-all duration-300" size={20} md:size={24} strokeWidth={1.5} />
+              <Hexagon className="text-brand group-hover:text-primary transition-all duration-300 w-5 h-5 md:w-6 md:h-6" strokeWidth={1.5} />
               <span className="text-[1.2rem] md:text-[1.6rem] font-serif italic tracking-[0.05em] text-brand lowercase pr-1 mt-1">neo.</span>
             </Link>
 

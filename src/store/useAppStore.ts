@@ -94,7 +94,7 @@ export const useAppStore = create<AppState>()(
       toggleSidebar: () => set((state) => ({ sidebarOpen: !state.sidebarOpen })),
       setSidebarOpen: (open) => set({ sidebarOpen: open }),
       toggleRightPanel: () => set((state) => ({ rightPanelOpen: !state.rightPanelOpen })),
-      setActiveConversation: (id) => set((state) => {
+      setActiveConversation: (id) => set(() => {
         if (!id) {
           return {
             activeConversationId: null,

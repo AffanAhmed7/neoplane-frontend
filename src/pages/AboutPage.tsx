@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Navbar } from '../components/landing/Navbar';
 import { Footer } from '../components/landing/Footer';
-import { Hexagon, Zap, Shield, Heart, Users, Globe } from 'lucide-react';
+import { Hexagon, Zap, Shield, Heart } from 'lucide-react';
 
 export const AboutPage: React.FC = () => {
   return (

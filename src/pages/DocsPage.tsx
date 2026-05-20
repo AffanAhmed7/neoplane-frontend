@@ -6,7 +6,6 @@ import {
   MessageSquare, Hash, Shield, Users, 
   FileText, Bell, Zap 
 } from 'lucide-react';
-import { Link } from 'react-router-dom';
 
 const docCategories = [
   {
@@ -54,7 +53,7 @@ const container = {
 
 const item = {
   hidden: { opacity: 0, y: 16 },
-  show: { opacity: 1, y: 0, transition: { duration: 0.5, ease: 'easeOut' } },
+  show: { opacity: 1, y: 0, transition: { duration: 0.5, ease: 'easeOut' as const } },
 };
 
 export const DocsPage: React.FC = () => {
