@@ -128,7 +128,7 @@ export const FluidBackground: React.FC<FluidBackgroundProps> = ({ isStatic = fal
       )}
 
       {/* Fine Grain Texture */}
-      <div className="absolute inset-0 opacity-[0.05] pointer-events-none mix-blend-overlay bg-[url('https://grainy-gradients.vercel.app/noise.svg')]" />
+      <div className="absolute inset-0 opacity-[0.05] pointer-events-none mix-blend-overlay bg-[url('/noise.svg')]" />
     </div>
   );
 };

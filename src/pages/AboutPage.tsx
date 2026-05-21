@@ -37,7 +37,7 @@ export const AboutPage: React.FC = () => {
               className="relative"
             >
               <div className="aspect-square rounded-[40px] bg-gradient-to-br from-primary/20 via-primary/5 to-transparent border border-white/5 flex items-center justify-center relative overflow-hidden group">
-                <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 group-hover:opacity-30 transition-opacity" />
+                <div className="absolute inset-0 bg-[url('/noise.svg')] opacity-20 group-hover:opacity-30 transition-opacity" />
                 <Hexagon size={160} className="text-primary/40 animate-float" strokeWidth={1} />
                 
                 {/* Decorative blobs */}
